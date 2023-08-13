@@ -1,0 +1,21 @@
+require("@nomiclabs/hardhat-ethers");
+require("@nomicfoundation/hardhat-verify");
+require('dotenv').config();
+
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  solidity: "0.8.18",
+  networks: {
+    hardhat: {
+    }, 
+    [process.env.NETWORK] : {
+      url: process.env.INFURA_URL,
+      accounts: [process.env.PRIVATE_KEY]
+    },
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API
+  }
+};
+
