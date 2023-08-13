@@ -49,7 +49,7 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your comp
 
 ## Usage
 
-Deploy the contract:
+1. Deploy the contract:
 
     ```bash
     npx hardhat run scripts/deploy.js --network <network-name>
