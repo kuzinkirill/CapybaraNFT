@@ -55,7 +55,7 @@ Deploy the contract:
     npx hardhat run scripts/deploy.js --network <network-name>
     ```
 
-    Replace <network-name> with the desired network name.
+Replace <network-name> with the desired network name.
 
 After deploying the smart contract, you will receive its address and the owner's address in the console.  
 
