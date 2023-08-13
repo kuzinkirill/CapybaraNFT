@@ -40,14 +40,16 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your comp
 
 2. Create a .env file in the project root directory. Fill in the necessary values:
 
+    ```bash
     NETWORK=<network-name>
     INFURA_URL=<infura-url>
     PRIVATE_KEY=<private-key>
     ETHERSCAN_API=<etherscan-api-key>
+    ```
 
 ## Usage
 
-1. Deploy the contract:
+Deploy the contract:
 
     ```bash
     npx hardhat run scripts/deploy.js --network <network-name>
@@ -55,7 +57,7 @@ Make sure you have Node.js and npm (Node Package Manager) installed on your comp
 
     Replace <network-name> with the desired network name.
 
-    After deploying the smart contract, you will receive its address and the owner's address in the console.  
+After deploying the smart contract, you will receive its address and the owner's address in the console.  
 
 ## Testing
 
